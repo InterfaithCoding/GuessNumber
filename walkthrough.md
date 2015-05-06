@@ -80,9 +80,9 @@ Line 12 is a **while statement**, which indicates the beginning of a **while loo
 **As long as the condition in our while statement is True, the programme keeps looping through the code inside the while-block until the first time the condition is False.** 
 
 ######Constructing a while loop
-A while loop first needs the key word **while** followed by a condition that evaluates to *true* or *false*
+A while loop first needs the key word **while** followed by a condition that evaluates to *True* or *False*
 
-A condition is an expression that combines two values with a comparison operator (such as < or >) and evaluates to a Boolean value. In our code, the condition in plain English is: "the number stored in the variable guessesTaken is less than 6." This condition will either be true or false. 
+A condition is an expression that combines two values with a comparison operator (such as < or >) and evaluates to a Boolean value. In our code, the condition in plain English is: "the number stored in the variable guessesTaken is less than 6." This condition will either be True or False. 
 
 There are two parts that we are comparing here:
 
@@ -94,7 +94,7 @@ These values are connected by the "<" (less than) comparison operator. Other com
 1. If you want to check if two values are equal to each other, remember to use the "==" sign, rather than the single "=". We use the single "=" when we are assigning a value to a variable.
 2. If you want to check if two values are *not* equal to each other we can use the "!=" operator. 
 
-Syntactically a *while statement* always has a : colon after the condition. On the next line we write the block of code that we want to be executed if the condition evaluates to true. We have to indent all the code we want to put in our while-block. We can see this on lines 13-26. 
+Syntactically a *while statement* always has a : colon after the condition. On the next line we write the block of code that we want to be executed if the condition evaluates to True. We have to indent all the code we want to put in our while-block. We can see this on lines 13-26. 
 
 So now our while statement is constructed the computer does the following:
 If the condition evaluates to True (which it does the first time, because the value of guessesTaken is 0), we enter the while-block at line 13 and keep going down. Once the program reaches the end of the while-block, instead of going down to the next line, the computer loops back up to the while statement’s line (line 12) and re-evaluates the condition. As before, if the condition is True the execution enters the while-block again. Each time the execution goes through the loop is called an iteration.
@@ -128,7 +128,7 @@ You might have been wondering how we can keep track of guesses taken by our play
 20.    print('Your guess is too low.') # There are eight spaces in front of print.
 ```
 
-Line 19 is an *if statement*. The execution will run the code in the following block if the if statement’s condition evaluates to True. If the condition is False, then the code in the if-block is skipped. Using if statements, you can make the programme only run certain code when you want it to.
+Line 19 is an *if statement*. The execution will run the code in the following block if the *if-statement’s* condition evaluates to True. If the condition is False, then the code in the if-block is skipped. Using if statements, you can make the programme only run certain code when you want it to.
 
 Line 19 checks if the player’s guess is less than the computer’s secret number. If so, then the execution moves inside the if-block on line 20 and prints a message telling the player this.
 
