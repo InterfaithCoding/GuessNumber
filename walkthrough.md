@@ -159,11 +159,9 @@ A break-statement tells the execution to jump immediately out of the while-block
 
 Line 28 has no indentation, which means the while-block has ended and this is the first line after the while-block. The execution left the while-block either because the while statement’s condition was False (when the player runs out of guesses) or the break statement on line 26 was executed (when the player guesses the number correctly).
 
-Line 28 checks to see if the player guessed correctly. If so, the execution enters the if-block at line 
+Line 28 checks to see if the player guessed correctly. If so, the execution enters the if-block at line 29 and 30. These lines will only execute if the condition in the if-statement on line 28 was True (that is, if the player correctly guessed the computer’s number).
 
-Lines 29 and 30 only execute if the condition in the if statement on line 28 was True (that is, if the player correctly guessed the computer’s number).
-
-Line 29 calls the str() function, which returns the string form of guessesTaken. Line 30 concatenates strings to tell the player they have won and how many guesses it took them. Only string values can concatenate to other strings. This is why line 29 had to change guessesTaken to the string form. Otherwise, trying to concatenate a string to an integer would cause Python to display an error.
+Line 29 calls the str() function, which returns the string form of guessesTaken. (Discuss with your pair how this compares this to line 15). Line 30 concatenates strings to tell the player they have won and how many guesses it took them. Only string values can concatenate to other strings. This is why line 29 had to change guessesTaken to the string form. Otherwise, trying to concatenate a string to an integer would cause Python to display an error.
 
 ```
 32. if guess != number:
