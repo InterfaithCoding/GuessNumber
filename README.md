@@ -1,7 +1,9 @@
 # 'Guess the Number' - our first computer game
 In this session we will be building the 'Guess the Number' game that we planned for last week - using Python. 
 
-Work through the walkthrough with your pair, typing out the code exactly as it appears. (No copy and pasting - that's cheating!) Remember to get the spacing and syntax exact, computers aren't as forgiving as your English teacher! 
+Last week we talked through what we needed our programme to do in plain English. Now its time to convert our English 'prep code' into real code that the computer can read. Have a look through your prep code, and see how it compares to the Python code that we're writing. Remember there's always more than one way to write a computer programme - if you have something in your prep code that isn't in the Python code - and you think it would be helpful to your programme, try and add it in. The Python code here is only one way of writing the programme! 
+
+Work through the walkthrough with your pair, typing out the code as it appears. (No copy and pasting - that's cheating!) Remember to get the spacing and syntax exact, computers aren't as forgiving as your English teacher! 
 
 Please feel free to customise the programme to your liking. You can print out funny/encouraging/discouraging comments to the player's along the way. You can also change the range of the computer's guess, to make it a much harder/easier game for your player to win. This is your game - so play around in the interactive shell to see what works - have fun with it! 
 
