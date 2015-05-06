@@ -10,9 +10,9 @@ Open a new file editor window by clicking on the File ► New Window. In the bla
 
 The first line here is a *comment* - meaning Python will ignore everything after the # sign. This tells us and anyone else who might be reading our code what this programme does.
 
-The second line is an *import statement*. While Python includes many built-in functions, some functions are packaged into separate **modules**. You can use these functions by importing their modules into your program with an import statement.
+The second line is an *import statement*. While Python includes many built-in functions, some functions are packaged into separate **modules**. You can use these functions by importing their modules into your programme with an import statement.
 
-In our 'Guess the Number' game, Line 2 imports the module named random so that the program can call random.randint(). This function will come up with a random number for the player to guess.
+In our 'Guess the Number' game, Line 2 imports the module named random so that the programme can call random.randint(). This function will come up with a random number for the player to guess.
 ***
 
 ```
@@ -99,7 +99,7 @@ On the next line we write the block of code that we want to be executed if the c
 We have to indent all the code we want to put in our while-block. We can see this on lines 13-26. 
 
 So when the computer reaches our while-statement it does the following:
-if the condition evaluates to True (which it does the first time, because the value of guessesTaken is 0), we enter the while-block at line 13 and keep going down. Once the program reaches the end of the while-block, instead of going down to the next line, the computer loops back up to the while statement’s line (line 12) and re-evaluates the condition. As before, if the condition is True the execution enters the while-block again. Each time the execution goes through the loop is called an iteration.
+if the condition evaluates to True (which it does the first time, because the value of guessesTaken is 0), we enter the while-block at line 13 and keep going down. Once the programme reaches the end of the while-block, instead of going down to the next line, the computer loops back up to the while statement’s line (line 12) and re-evaluates the condition. As before, if the condition is True the execution enters the while-block again. Each time the execution goes through the loop is called an iteration.
 ***
 
 ####The Player Guesses
@@ -148,7 +148,7 @@ Line 22 checks if the player’s guess is greater than the secret number. If thi
 26.    break
 ```
 
-The if-statement on line 25 checks if the guess is equal to the secret number. If it is, the program runs the break statement on line 26.
+The if-statement on line 25 checks if the guess is equal to the secret number. If it is, the programme runs the break statement on line 26.
 
 A break-statement tells the execution to jump immediately out of the while-block to the first line after the end of the while-block. The break statement doesn’t bother rechecking the while loop’s condition.
 
@@ -177,7 +177,7 @@ Line 32 uses the “not equal to” comparison operator != to check if player’
 
 Lines 33 and 34 are inside the if-block, and only execute if the condition on line 32 was True.
 
-In this block, the program tells the player what the secret number they failed to guess correctly was. This requires concatenating strings, but number stores an integer value. Line 33 will overwrite number with a string form so that it can be concatenated to the 'Nope. The number I was thinking of was ' string on line 34.
+In this block, the programme tells the player what the secret number they failed to guess correctly was. This requires concatenating strings, but number stores an integer value. Line 33 will overwrite number with a string form so that it can be concatenated to the 'Nope. The number I was thinking of was ' string on line 34.
 
 At this point, the execution has reached the end of the code, and the programme terminates. 
 
