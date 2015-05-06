@@ -77,7 +77,7 @@ Line 12 is a **while statement**, which indicates the beginning of a **while loo
 
 ######What is a while loop?
 
-**As long as the condition in our while statement is True, the programme keeps looping through the code inside the while-block until the first time the condition is False.** 
+*As long as the condition in our while statement is True, the programme keeps looping through the code inside the while-block until the first time the condition is False.*
 
 ######Constructing a while loop
 A while loop first needs the key word **while** followed by a condition that evaluates to *True* or *False*
