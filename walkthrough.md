@@ -98,61 +98,62 @@ Syntactically a *while statement* always has a : colon after the condition. On t
 
 So now our while statement is constructed the computer does the following:
 If the condition evaluates to True (which it does the first time, because the value of guessesTaken is 0), we enter the while-block at line 13 and keep going down. Once the program reaches the end of the while-block, instead of going down to the next line, the computer loops back up to the while statement’s line (line 12) and re-evaluates the condition. As before, if the condition is True the execution enters the while-block again. Each time the execution goes through the loop is called an iteration.
+---
 
 ####The Player Guesses####
 
 We're going to have a closer look at the code in the while-block. Remember your indentation! 
 
 ```
-  print('Take a guess.') # There are four spaces in front of print.
-  guess = input()
+13.   print('Take a guess.') # There are four spaces in front of print.
+14.   guess = input()
 ```
 
 Lines 13 to 17 ask the player to guess what the secret number is and lets them enter their guess. That number is stored in a variable named guess.
-
+---
 ```
-  guess = int(guess)
+15.   guess = int(guess)
 ```
 
 The input() function always returns a *string* of text that the player typed. Later in the programme we want to compare if the guess is greater than, less than, or equal to the secret number in the number variable. If we want to compare two numbers we need them to be of the same data type - they should both be *integers*. Line 15 overwrites the string value in guess with the integer value returned by int() function. 
-
+---
 ```
-  guessesTaken = guessesTaken + 1
+17.   guessesTaken = guessesTaken + 1
 ```
 
 You might have been wondering how we can keep track of guesses taken by our player. We set its value to 0 at the beginning of the programme - but we want it to increase by 1 each time a guess is taken. Each time the code loops through the while-block, Python will take this value and add 1 to it. This new increased value is then stored as the value of guessesTaken. Think of this line as meaning: "the guessesTaken variable should be one more than what it already is". 
-
+---
 ```
-  if guess < number:
-    print('Your guess is too low.') # There are eight spaces in front of print.
+19.  if guess < number:
+20.    print('Your guess is too low.') # There are eight spaces in front of print.
 ```
 
-Line 19 is an *if statement*. The execution will run the code in the following block if the if statement’s condition evaluates to True. If the condition is False, then the code in the if-block is skipped. Using if statements, you can make the program only run certain code when you want it to.
+Line 19 is an *if statement*. The execution will run the code in the following block if the if statement’s condition evaluates to True. If the condition is False, then the code in the if-block is skipped. Using if statements, you can make the programme only run certain code when you want it to.
 
 Line 19 checks if the player’s guess is less than the computer’s secret number. If so, then the execution moves inside the if-block on line 20 and prints a message telling the player this.
 
 Unlike *while statements*, *if statements* don’t loop. 
-
+---
 ```
-  if guess > number:
-    print('Your guess is too high.')
+22.  if guess > number:
+23.    print('Your guess is too high.')
 ```
 
 Line 22 checks if the player’s guess is greater than the secret number. If this condition is True, then the print() function call tells the player that their guess is too high.
+---
+```
+25.  if guess == number:
+26.    break
+```
+
+The if-statement on line 25 checks if the guess is equal to the secret number. If it is, the program runs the break statement on line 26.
+
+A break-statement tells the execution to jump immediately out of the while-block to the first line after the end of the while-block. The break statement doesn’t bother rechecking the while loop’s condition.
 
 ```
-  if guess == number:
-    break
-```
-
-The if statement on line 25 checks if the guess is equal to the secret number. If it is, the program runs the break statement on line 26.
-
-A break statement tells the execution to jump immediately out of the while-block to the first line after the end of the while-block. The break statement doesn’t bother rechecking the while loop’s condition.
-
-```
-if guess == number:
-  guessesTaken = str(guessesTaken)
-  print('Good job, ' + myName + '! You guessed my number in ' + guessesTaken + ' guesses!')
+28. if guess == number:
+29.  guessesTaken = str(guessesTaken)
+30.  print('Good job, ' + myName + '! You guessed my number in ' + guessesTaken + ' guesses!')
 ```
 
 Line 28 has no indentation, which means the while-block has ended and this is the first line after the while-block. The execution left the while-block either because the while statement’s condition was False (when the player runs out of guesses) or the break statement on line 26 was executed (when the player guesses the number correctly).
@@ -164,9 +165,9 @@ Lines 29 and 30 only execute if the condition in the if statement on line 28 was
 Line 29 calls the str() function, which returns the string form of guessesTaken. Line 30 concatenates strings to tell the player they have won and how many guesses it took them. Only string values can concatenate to other strings. This is why line 29 had to change guessesTaken to the string form. Otherwise, trying to concatenate a string to an integer would cause Python to display an error.
 
 ```
-if guess != number:
-  number = str(number)
-  print('Nope. The number I was thinking of was ' + number)
+32. if guess != number:
+33.  number = str(number)
+34.  print('Nope. The number I was thinking of was ' + number)
 ```
 
 Line 32 uses the “not equal to” comparison operator != to check if player’s last guess is not equal to the secret number. If this condition evaluates to True, the execution moves into the if-block on line 33.
