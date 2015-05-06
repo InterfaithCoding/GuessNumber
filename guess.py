@@ -1,5 +1,5 @@
- # This is a guess the number game.
- import random
+# This is a guess the number game.
+import random
 
 guessesTaken = 0
 
