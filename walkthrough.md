@@ -100,7 +100,7 @@ So now our while statement is constructed the computer does the following:
 If the condition evaluates to True (which it does the first time, because the value of guessesTaken is 0), we enter the while-block at line 13 and keep going down. Once the program reaches the end of the while-block, instead of going down to the next line, the computer loops back up to the while statement’s line (line 12) and re-evaluates the condition. As before, if the condition is True the execution enters the while-block again. Each time the execution goes through the loop is called an iteration.
 ***
 
-####The Player Guesses####
+####The Player Guesses
 
 We're going to have a closer look at the code in the while-block. Remember your indentation! 
 
@@ -150,6 +150,7 @@ The if-statement on line 25 checks if the guess is equal to the secret number. I
 
 A break-statement tells the execution to jump immediately out of the while-block to the first line after the end of the while-block. The break statement doesn’t bother rechecking the while loop’s condition.
 
+####Ending the game and declaring victory (or not)
 ```
 28. if guess == number:
 29.  guessesTaken = str(guessesTaken)
