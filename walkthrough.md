@@ -94,7 +94,7 @@ These values are connected by the "<" (less than) comparison operator. Other com
 1. If you want to check if two values are equal to each other, remember to use the "==" sign, rather than the single "=". We use the single "=" when we are assigning a value to a variable.
 2. If you want to check if two values are *not* equal to each other we can use the "!=" operator. 
 
-Syntactically a *while statement* always has a : colon after the condition. The block of code that is going to be looped through until the condition is false has to be indented. We can see this on lines 13-26. 
+Syntactically a *while statement* always has a : colon after the condition. On the next line we write the block of code that we want to be executed if the condition evaluates to true. We have to indent all the code we want to put in our while-block. We can see this on lines 13-26. 
 
 So now our while statement is constructed the computer does the following:
 If the condition evaluates to True (which it does the first time, because the value of guessesTaken is 0), we enter the while-block at line 13 and keep going down. Once the program reaches the end of the while-block, instead of going down to the next line, the computer loops back up to the while statement’s line (line 12) and re-evaluates the condition. As before, if the condition is True the execution enters the while-block again. Each time the execution goes through the loop is called an iteration.
