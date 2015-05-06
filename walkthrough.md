@@ -7,10 +7,10 @@ Open a new file editor window by clicking on the File ► New Window. In the bla
 
 Work through this in your pair, typing out the code exactly as it appears here. (No copy and pasting - that's cheating!) Remember to get the spacing and syntax exact, computers aren't as forgiving as your history teacher! If there is something that you don't understand - ask your pair to explain it to you, that's part of the reason why it's so useful having a pair. Don't be afraid to ask Hannah or Google any questions you have.  
 
-'''
+```
 # this is a guess the number game
 import random
-'''
+```
 
 The first line here is a *comment* - meaning Python will ignore everything after the # sign. This tells us and anyone else who might be reading our code what this programme does.
 
