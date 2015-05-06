@@ -98,7 +98,7 @@ Syntactically a *while statement* always has a : colon after the condition. On t
 
 So now our while statement is constructed the computer does the following:
 If the condition evaluates to True (which it does the first time, because the value of guessesTaken is 0), we enter the while-block at line 13 and keep going down. Once the program reaches the end of the while-block, instead of going down to the next line, the computer loops back up to the while statement’s line (line 12) and re-evaluates the condition. As before, if the condition is True the execution enters the while-block again. Each time the execution goes through the loop is called an iteration.
----
+***
 
 ####The Player Guesses####
 
@@ -110,19 +110,19 @@ We're going to have a closer look at the code in the while-block. Remember your 
 ```
 
 Lines 13 to 17 ask the player to guess what the secret number is and lets them enter their guess. That number is stored in a variable named guess.
----
+***
 ```
 15.   guess = int(guess)
 ```
 
 The input() function always returns a *string* of text that the player typed. Later in the programme we want to compare if the guess is greater than, less than, or equal to the secret number in the number variable. If we want to compare two numbers we need them to be of the same data type - they should both be *integers*. Line 15 overwrites the string value in guess with the integer value returned by int() function. 
----
+***
 ```
 17.   guessesTaken = guessesTaken + 1
 ```
 
 You might have been wondering how we can keep track of guesses taken by our player. We set its value to 0 at the beginning of the programme - but we want it to increase by 1 each time a guess is taken. Each time the code loops through the while-block, Python will take this value and add 1 to it. This new increased value is then stored as the value of guessesTaken. Think of this line as meaning: "the guessesTaken variable should be one more than what it already is". 
----
+***
 ```
 19.  if guess < number:
 20.    print('Your guess is too low.') # There are eight spaces in front of print.
@@ -133,14 +133,14 @@ Line 19 is an *if statement*. The execution will run the code in the following b
 Line 19 checks if the player’s guess is less than the computer’s secret number. If so, then the execution moves inside the if-block on line 20 and prints a message telling the player this.
 
 Unlike *while statements*, *if statements* don’t loop. 
----
+***
 ```
 22.  if guess > number:
 23.    print('Your guess is too high.')
 ```
 
 Line 22 checks if the player’s guess is greater than the secret number. If this condition is True, then the print() function call tells the player that their guess is too high.
----
+***
 ```
 25.  if guess == number:
 26.    break
