@@ -33,4 +33,4 @@ Please give a rating and comment to the following:
 2. Timing and length of break
 
 #####Suggestions
-Please add your own suggestions - this can include things that you would like to learn or make further in to the course. 
+Please add your own suggestions - this can include programmes that you would like to learn/make further in to the course. 
