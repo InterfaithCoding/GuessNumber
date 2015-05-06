@@ -34,4 +34,16 @@ Line 6 is a function call to the print() function. Remember that a function is l
 
 Line 7 lets the user type in their name and stores it in the myName variable. (Remember, the string might not really be the player’s name. It’s just whatever string the player typed. Computers are dumb and just follow their instructions no matter what.)
 
+```
+number = random.randint(1, 20)
+```
+
+Line 9 calls a new function named randint() and stores the return value in the *variable* number. The randint() function is provided by the random module, so you must precede it with random. (Don’t forget the full-stop! This tells Python that the randint() function is in the random module).
+
+####What does the randint() function do?####
+
+The randint() function will return a random integer between (and including) the two integer arguments you pass to it. Line 9 passes 1 and 20 between the brackets separated by commas that follow the function name. The random integer that randint() returns is stored in a variable named number; this is the secret number the player is trying to guess.
+
+Try different ranges of numbers by changing the arguments. For example, try random.randint(1000, 2000) to get integers between 1000 and 2000. Here's a good place to have a play with it in the interactive shell! 
+
 
