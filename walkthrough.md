@@ -163,6 +163,8 @@ Line 28 checks to see if the player guessed correctly. If so, the execution ente
 
 Line 29 calls the str() function, which returns the string form of guessesTaken. (Discuss with your pair how this compares this to line 15). Line 30 concatenates strings to tell the player they have won and how many guesses it took them. Only string values can concatenate to other strings. This is why line 29 had to change guessesTaken to the string form. Otherwise, trying to concatenate a string to an integer would cause Python to display an error.
 
+What should our programme do if the number the player guessed doesn't equal the computer's pick? 
+
 ```
 32. if guess != number:
 33.  number = str(number)
@@ -175,5 +177,7 @@ Lines 33 and 34 are inside the if-block, and only execute if the condition on li
 
 In this block, the program tells the player what the secret number they failed to guess correctly was. This requires concatenating strings, but number stores an integer value. Line 33 will overwrite number with a string form so that it can be concatenated to the 'Nope. The number I was thinking of was ' string on line 34.
 
-At this point, the execution has reached the end of the code, and the programme terminates. Congratulations! You’ve just programmed your first real game!
+At this point, the execution has reached the end of the code, and the programme terminates. 
+
+Congratulations! You’ve just programmed your first real game!
 
