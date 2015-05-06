@@ -1,4 +1,4 @@
-# GuessNumber
+# 'Guess the Number' - our first computer game
 In this session we will be building the 'Guess the Number' game that we planned for last week - using Python. 
 
 Work through the walkthrough with your pair, typing out the code exactly as it appears. (No copy and pasting - that's cheating!) Remember to get the spacing and syntax exact, computers aren't as forgiving as your English teacher! 

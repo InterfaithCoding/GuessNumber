@@ -13,12 +13,14 @@ The first line here is a *comment* - meaning Python will ignore everything after
 The second line is an *import statement*. While Python includes many built-in functions, some functions are packaged into separate **modules**. You can use these functions by importing their modules into your program with an import statement.
 
 In our 'Guess the Number' game, Line 2 imports the module named random so that the program can call random.randint(). This function will come up with a random number for the player to guess.
+--------
 
 ```
 4. guessesTaken = 0
 ```
 
 Line 4 creates a new *variable* named guessesTaken. Since the player hasn’t made any guesses at this point in the programme, let's set it's initial value to 0. Explain to your pair why we need this variable in the programme. 
+----------
 
 ```
 6. print("Hello! What is your name?")
@@ -29,6 +31,7 @@ These lines should be familiar!
 Line 6 is a function call to the print() function. Remember that a function is like a mini-programme inside your programme. When your programme calls a function, it runs this mini-programme. The code inside the print() function displays the *string* argument you passed it between the brackets.
 
 Line 7 lets the player type in their name and stores it in the myName variable. (Remember, the string might not really be the player’s name. It’s just whatever string the player typed. Computers are dumb and just follow their instructions no matter what.)
+----------
 
 ```
 9. number = random.randint(1, 20)
