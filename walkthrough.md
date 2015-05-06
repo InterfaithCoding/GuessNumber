@@ -1,11 +1,7 @@
 Let's build 'Guess the Number'
 ==============================
 
-Open a new file editor window by clicking on the File ► New Window. In the blank window that appears, type in the source code and save it as *guess.py*. 
-
-(Then run the program by pressing F5. When you enter this code into the file editor, be sure to pay attention to the spacing at the front of some of the lines. Some lines have four or eight spaces of indentation.)
-
-Work through this in your pair, typing out the code exactly as it appears here. (No copy and pasting - that's cheating!) Remember to get the spacing and syntax exact, computers aren't as forgiving as your history teacher! If there is something that you don't understand - ask your pair to explain it to you, that's part of the reason why it's so useful having a pair. Don't be afraid to ask Hannah or Google any questions you have.  
+Open a new file editor window by clicking on the File ► New Window. In the blank window that appears, type in the source code as we go along and save it as *guess.py*. Make sure you indent your code correctly. If you want to see what's happening in the programme, press F5 to run it. 
 
 ```
 1. # this is a guess the number game
