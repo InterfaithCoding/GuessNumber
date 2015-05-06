@@ -8,8 +8,8 @@ Open a new file editor window by clicking on the File ► New Window. In the bla
 Work through this in your pair, typing out the code exactly as it appears here. (No copy and pasting - that's cheating!) Remember to get the spacing and syntax exact, computers aren't as forgiving as your history teacher! If there is something that you don't understand - ask your pair to explain it to you, that's part of the reason why it's so useful having a pair. Don't be afraid to ask Hannah or Google any questions you have.  
 
 ```
-# this is a guess the number game
-import random
+1. # this is a guess the number game
+2. import random
 ```
 
 The first line here is a *comment* - meaning Python will ignore everything after the # sign. This tells us and anyone else who might be reading our code what this programme does.
@@ -19,14 +19,14 @@ The second line is an *import statement*. While Python includes many built-in fu
 In our 'Guess the Number' game, Line 2 imports the module named random so that the program can call random.randint(). This function will come up with a random number for the player to guess.
 
 ```
-guessesTaken = 0
+4. guessesTaken = 0
 ```
 
 Line 4 creates a new *variable* named guessesTaken. Since the player hasn’t made any guesses at this point in the programme, let's set it's initial value to 0. Explain to your pair why we need this variable in the programme. 
 
 ```
-print("Hello! What is your name?")
-myName = input()
+6. print("Hello! What is your name?")
+7. myName = input()
 ```
 
 These lines should be familiar! 
@@ -35,7 +35,7 @@ Line 6 is a function call to the print() function. Remember that a function is l
 Line 7 lets the player type in their name and stores it in the myName variable. (Remember, the string might not really be the player’s name. It’s just whatever string the player typed. Computers are dumb and just follow their instructions no matter what.)
 
 ```
-number = random.randint(1, 20)
+9. number = random.randint(1, 20)
 ```
 
 Line 9 calls a new function named randint() and stores the return value in the *variable* number. The randint() function is provided by the random module, so you must precede it with random. (Don’t forget the full-stop! This tells Python that the randint() function is in the random module).
@@ -49,28 +49,28 @@ Try different ranges of numbers by changing the arguments. For example, try rand
 ####Welcoming the Player###
 
 ```
-print('Well, ' + myName + ', I am thinking of a number between 1 and 20.')
+10. print('Well, ' + myName + ', I am thinking of a number between 1 and 20.')
 ```
 
 On line 10 the print() function welcomes the player by name, and tells them that the computer is thinking of a random number. The plus signs *concatenate* the three strings to evaluate down to one string.
 
 ####Loops####
 ```
-while guessesTaken < 6:
-  print('Take a guess.') # There are four spaces in front of print.
-  guess = input()
-  guess = int(guess)
-
-  guessesTaken = guessesTaken + 1
-
-  if guess < number:
-    print('Your guess is too low.') # There are eight spaces in front of print.
-
-  if guess > number:
-    print('Your guess is too high.')
-
-  if guess == number:
-    break
+12. while guessesTaken < 6:
+13.  print('Take a guess.') # There are four spaces in front of print.
+14.  guess = input()
+15.  guess = int(guess)
+16.
+17.  guessesTaken = guessesTaken + 1
+18.
+19.  if guess < number:
+20.    print('Your guess is too low.') # There are eight spaces in front of print.
+21.
+22.  if guess > number:
+23.    print('Your guess is too high.')
+24.
+25.  if guess == number:
+26.    break
 ```
 
 Line 12 is a while statement, which indicates the beginning of a *while loop*. A while statement always has a : colon after the condition. 
@@ -161,5 +161,5 @@ Lines 33 and 34 are inside the if-block, and only execute if the condition on li
 
 In this block, the program tells the player what the secret number they failed to guess correctly was. This requires concatenating strings, but number stores an integer value. Line 33 will overwrite number with a string form so that it can be concatenated to the 'Nope. The number I was thinking of was ' string on line 34.
 
-At this point, the execution has reached the end of the code, and the program terminates. Congratulations! You’ve just programmed your first real game!
+At this point, the execution has reached the end of the code, and the programme terminates. Congratulations! You’ve just programmed your first real game!
 
