@@ -2,7 +2,7 @@ Let's build 'Guess the Number'
 ==============================
 
 Open a new file editor window by clicking on the File ► New Window. In the blank window that appears, type in the source code as we go along and save it as *guess.py*. Make sure you indent your code correctly. If you want to see what's happening in the programme, press F5 to run it. 
-
+####Setting up the game
 ```
 1. # this is a guess the number game
 2. import random
@@ -44,16 +44,17 @@ Line 9 calls a new function named randint() and stores the return value in the *
 The randint() function will return a random integer between (and including) the two integer arguments you pass to it. Line 9 passes 1 and 20 between the brackets separated by commas that follow the function name. The random integer that randint() returns is stored in a variable named *number*; this is the secret number the player is trying to guess.
 
 Try different ranges of numbers by changing the arguments. For example, try random.randint(1000, 2000) to get integers between 1000 and 2000. Now's a good time to play around with it in the interactive shell - but remember you have to import the random module first! 
-
-######Welcoming the Player
+***
+####Welcoming the Player
 
 ```
 10. print('Well, ' + myName + ', I am thinking of a number between 1 and 20.')
 ```
 
 On line 10 the print() function welcomes the player by name, and tells them that the computer is thinking of a random number. The plus signs *concatenate* the three strings to evaluate down to one string.
+***
 
-####Loops####
+######Loops
 ```
 12. while guessesTaken < 6:
 13.  print('Take a guess.') # There are four spaces in front of print.
@@ -72,17 +73,31 @@ On line 10 the print() function welcomes the player by name, and tells them that
 26.    break
 ```
 
-Line 12 is a while statement, which indicates the beginning of a *while loop*. A while statement always has a : colon after the condition. 
+Line 12 is a **while statement**, which indicates the beginning of a **while loop**. 
 
-Let's break down this while statement: the expression that follows the *while* keyword contains two values 
+######What is a while loop?
+
+**As long as the condition in our while statement is True, the programme keeps looping through the code inside the while-block until the first time the condition is False.** 
+
+######Constructing a while loop
+A while loop first needs the key word **while** followed by a condition that evaluates to *true* or *false*
+
+A condition is an expression that combines two values with a comparison operator (such as < or >) and evaluates to a Boolean value. In our code, the condition in plain English is: "the number stored in the variable guessesTaken is less than 6." This condition will either be true or false. 
+
+There are two parts that we are comparing here:
+
 1. The value in the variable guessesTaken
 2. the integer value 6
 
-These values are connected by the "<" (less than) operator. Comparison operators compare two values and evaluate to a True or False Boolean value. If you don't remember what a Boolean value is - ask your pair or Google it!
+These values are connected by the "<" (less than) comparison operator. Other comparison operators are just like those you would use in algebra. There are two key additional comparison operators that are important to know:
 
+1. If you want to check if two values are equal to each other, remember to use the "==" sign, rather than the single "=". We use the single "=" when we are assigning a value to a variable.
+2. If you want to check if two values are *not* equal to each other we can use the "!=" operator. 
+
+Syntactically a *while statement* always has a : colon after the condition. The block of code that is going to be looped through until the condition is false has to be indented. We can see this on lines 13-26. 
+
+So now our while statement is constructed the computer does the following:
 If the condition evaluates to True (which it does the first time, because the value of guessesTaken is 0), we enter the while-block at line 13 and keep going down. Once the program reaches the end of the while-block, instead of going down to the next line, the computer loops back up to the while statement’s line (line 12) and re-evaluates the condition. As before, if the condition is True the execution enters the while-block again. Each time the execution goes through the loop is called an iteration.
-
-**As long as the condition is True, the program keeps executing the code inside the while-block repeatedly until the first time the condition is False.** 
 
 ####The Player Guesses####
 
